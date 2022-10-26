@@ -23,11 +23,10 @@ public class Server {
 			DataInputStream inStream = new DataInputStream(serverClientSocket.getInputStream());
 			DataOutputStream outStream = new DataOutputStream(serverClientSocket.getOutputStream());
 			
-			int totalSpecialCharacters = 0, totalDigits = 0, totalVowels = 0, totalConsonants = 0;
-			
 			while(!clientMessage.equals("end")) {
-		      clientMessage = inStream.readUTF();
+		     	clientMessage = inStream.readUTF();
 		      	String cMg = clientMessage;
+			int totalSpecialCharacters = 0, totalDigits = 0, totalVowels = 0, totalConsonants = 0;
 		      	
 				for (int i = 0; i < cMg.length(); i++) {
 				 
