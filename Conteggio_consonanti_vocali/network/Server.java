@@ -23,7 +23,7 @@ public class Server {
 			DataInputStream inStream = new DataInputStream(serverClientSocket.getInputStream());
 			DataOutputStream outStream = new DataOutputStream(serverClientSocket.getOutputStream());
 			
-			int totalSpecialCharacters = 0, totalDigits = 0, totalVowels = 0, totalConsonants = 2;
+			int totalSpecialCharacters = 0, totalDigits = 0, totalVowels = 0, totalConsonants = 0;
 			
 			while(!clientMessage.equals("end")) {
 		      clientMessage = inStream.readUTF();
