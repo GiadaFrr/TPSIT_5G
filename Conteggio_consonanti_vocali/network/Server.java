@@ -49,7 +49,7 @@ public class Server {
 				 else if (cMg.charAt(i) >= 48 && cMg.charAt(i) <= 57) {
 				 totalDigits++;
 				 }
-				 // Special characters family
+				 // Controllo se ci sono caratteri speciali
 				 else {
 				 totalSpecialCharacters++;
 				 }
