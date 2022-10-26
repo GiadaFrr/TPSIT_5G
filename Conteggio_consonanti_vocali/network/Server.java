@@ -60,7 +60,6 @@ public class Server {
 				System.out.println("Server: Numero totale di numeri nella stringa data: " + totalDigits );
 				System.out.println("Server: Numero totale di caratteri nella stringa data: " + totalSpecialCharacters );
 			    outStream.writeUTF("Echo from server : "         + clientMessage);
-			    System.out.println("LUCIA");
 		        outStream.flush();
 			}
 		} catch (Exception e) {
